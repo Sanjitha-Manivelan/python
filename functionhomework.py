@@ -1,23 +1,4 @@
-02/01/2020
-
-Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Python. (It is true that Python has the max() function built in, but writing it yourself is nevertheless a good exercise ).
-Define a function max_of_three() that takes three numbers as arguments and returns the largest of them.
-Define a function that computes the length of a given list or string. ( It is true that Python has the len()function built in, but writing it yourself is nevertheless a good exercise ).  [note : you can’t use inbuilt len() function]
-Write a function that takes a character ( i.e. a string of length 1 ) and returns True if it is a vowel, Falseotherwise.
-Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in a list of numbers. For example, sum([1, 2, 3, 4]) should return 10, and multiply([1, 2, 3, 4]) should return 24.
-Define a function reverse() that computes the reversal of a string. For example, reverse( "I am testing" )should return the string "gnitset ma I".
-Define a function is_palindrome() that recognizes palindromes (i.e. words that look the same written backwards). For example, is_palindrome( "radar" ) should return True.
-Write a function is_member() that takes a value ( i.e. a number, string, etc ) x and a list of values a, and returns True if x is a member of a, False otherwise. (Note that this is exactly what the in operator does, but for the sake of the exercise you should pretend Python did not have this operator). [note : you can’t use inbuilt is function]
-Define a function overlapping() that takes two lists and returns True if they have at least one member in common, False otherwise. You may use your is_member() function, or the in operator, but for the sake of the exercise, you should (also) write it using two nested for-loops.
-Print the following ( using two for loops )
-	
-# # # # #
-# # # #
-# # #
-# # 
-#
-
-Shiven & Sanju has to create a github account and share
+02/01/2020	
 
 1.def max(a,b):
     if(a<b):
@@ -51,10 +32,85 @@ func(str)
         print("False")
         
         4.vowel(name)
-        
+	
+
+5.def sum(s):
+    num=0
+    for j in range(0,4,1):
+        num=num+s[j]
+    print(num)
+
+5.n=[]
+for i in range(0,4,1):
+    s=int(input("Enter Number:"))
+    n.append(s)
+sum(n)
+print(n)
+
+5.def mult(s):
+    num=1
+    for j in range(0,4,1):
+        num=num*s[j]
+    print(num)
+
+5.n=[]
+for i in range(0,4,1):
+    s=int(input("Enter Number:"))
+    n.append(s)
+mult(n)
+
 6.def str_reverse(name):
-    name=input("Enter Name:")
     for i in range(len(name)-1,-1,-1):
             print(name[i])
             
             6.str_reverse(name)
+	
+7.def palindrome(word):
+    word=[]
+    word2=[]
+    word=input("Enter Name:")
+    print(word)
+    word2=word[::-1]
+    print(word2)
+    if(word==word2):
+        print("True")
+    else:
+        print("False")
+	
+	7.palindrome("madam")
+	
+8.def is_member(a):
+    a=[]
+    for i in range(0,4,1):
+        num=input("Enter Number:")
+        a.append(num)
+    print(" ")
+    s=input("Enter Number To Check:")
+    if(s in a):
+        print("Yes")
+    else:
+        print("No")
+	
+	8.is_member(2)
+	
+9.a=[]
+s=[]
+for i in range(0,4,1):
+    num=input("Enter Number:")
+    a.append(num)
+print(" ")
+for j in range(0,4,1):
+    sa=input("Enter Number To Check:")
+    s.append(sa)
+
+for g in range(0,4,1):
+    for f in range(0,4,1):
+        if(a[g]==s[f]):
+            print(" ")
+            print("Yes")
+            break; 
+	
+10.for i in range(5,0,-1):
+    for s in range(i,0,-1):
+        print("#", end = " ")
+    print("\n")
