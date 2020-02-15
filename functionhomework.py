@@ -8,11 +8,11 @@
         
 2.        def max_of_three(a,b,c):
     if(a>b and a>c):
-        print(a)
+        return(a)
     elif(b>a and b>c):
-        print(b)
+        return(b)
     else:
-        print(c)
+        return(c)
         
  3.       def func(name):
     a=0
